@@ -1,96 +1,83 @@
-# 📇 Contact Management System (Java Console Application)
+#📘 Contact Management System
 
-## 📌 Project Overview
-A menu-driven Contact Management System built using Core Java.  
-This application allows users to perform CRUD operations on contacts
-with file-based persistence for data storage.
+## 📌 Overview
+A console-based Contact Management System built using Java that allows users to manage contact records efficiently. The application supports adding, viewing, updating, deleting, and searching contacts while maintaining persistent storage using file handling.
 
-The project demonstrates strong fundamentals in Object-Oriented Programming,
-Collections Framework, File Handling, and clean project structure.
+This project demonstrates strong understanding of Object-Oriented Programming principles and modular code structure.
 
 ---
 
 ## 🚀 Features
-- Add New Contact
-- Update Existing Contact
-- Delete Contact
-- Search Contact (by name or phone number)
-- Display All Contacts
-- File-Based Data Persistence
-- Input Validation and Exception Handling
+
+- Add new contacts
+- View all saved contacts
+- Update existing contact details
+- Delete contacts
+- Search contacts by name
+- Persistent data storage using file handling
+- Layered structure (Model + Service)
 
 ---
 
-## 🛠 Technologies Used
-- Java (Core Java)
-- OOP Principles
-- ArrayList (Collections Framework)
-- File I/O (FileWriter, BufferedReader)
-- Exception Handling
+## 🛠 Tech Stack
+
+- **Language:** Java  
+- **Programming Concepts:** OOP (Encapsulation, Abstraction)  
+- **Architecture:** Layered Design Pattern  
+- **Data Storage:** File-based persistence (`contacts.dat`)  
 
 ---
 
 ## 📂 Project Structure
 
+```
 Contact-Management-System/
 │
 ├── src/
+│   ├── Main.java
 │   ├── model/
 │   │   └── Contact.java
-│   │
-│   ├── service/
-│   │   └── ContactService.java
-│   │
-│   └── Main.java
+│   └── service/
+│       └── ContactService.java
 │
-├── data/
-│   └── contacts.txt
-│
+├── contacts.dat
 ├── README.md
 └── .gitignore
+```
 
 ---
 
-## ▶ How to Compile and Run
+## ▶️ How to Run
 
-Make sure you are inside the project root directory:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/navya-776/Contact-Management-System.git
+   ```
 
-c:\Users\forsu\OneDrive\Desktop\Contact Management-System
+2. Navigate to the project directory:
+   ```bash
+   cd Contact-Management-System
+   ```
 
-### 1️⃣ Compile the Project
+3. Compile the program:
+   ```bash
+   javac src/Main.java
+   ```
 
-javac -encoding UTF-8 -d bin -cp src src/Main.java src/model/Contact.java src/service/ContactService.java
-
-This command:
-- Compiles all Java source files
-- Stores compiled `.class` files in the `bin` directory
-- Preserves package structure
-
-### 2️⃣ Run the Application
-
-java -cp bin Main
-
-This executes the application from the compiled files inside the `bin` folder.
-
----
-
-## 📖 Concepts Demonstrated
-- Object-Oriented Design
-- Package Organization
-- Separation of Concerns
-- Collections Framework Usage
-- File Persistence Mechanism
-- Exception Handling
+4. Run the application:
+   ```bash
+   java src.Main
+   ```
 
 ---
 
-## 🔮 Future Enhancements
-- Add GUI using JavaFX or Swing
-- Convert to Web Application (Spring Boot)
-- Integrate MySQL Database
-- Implement User Authentication
+## 📈 Future Improvements
 
----
+- GUI version using JavaFX or Swing  
+- Database integration (MySQL)  
+- Improved input validation and exception handling      
+- REST API version for web integration  
 
-## 👩‍💻 Author
-Developed as a Core Java project to strengthen backend fundamentals and structured programming practices.
+
+## 👩‍💻 Developed By: 
+Navya
